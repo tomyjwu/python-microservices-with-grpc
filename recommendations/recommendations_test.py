@@ -10,3 +10,7 @@ def test_recommendations():
     )
     response = service.Recommend(request, None)
     assert len(response.recommendations) == 1
+    print(response)
+
+if __name__ == '__main__':
+  test_recommendations()
